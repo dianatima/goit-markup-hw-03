@@ -93,7 +93,7 @@ a {
 
 .nav {
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 
 .nav-list {
@@ -331,7 +331,7 @@ a {
 .portfolio-section-list {
     display: flex;
     justify-content: center;
-    column-gap: 24px;
+    gap: 24px;
     margin-bottom: 72px;
 }
 
