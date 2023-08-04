@@ -93,18 +93,17 @@ a {
 
 .nav {
     display: flex;
-    align-items: center;
-    column-gap: 76px;
+    align-items: left;
 }
 
 .nav-list {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .address-list {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 
 .logo {
@@ -118,10 +117,14 @@ a {
 }
 
 .header-logo {
+    margin-right: 76px
+}
+
+.header-accent {
     color: var(--navy-color);
 }
 
-.footer-logo {
+.footer-accent {
     color: var(--cloud-color);
 }
 
@@ -131,6 +134,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-color);
+    padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -155,7 +159,7 @@ a {
 .hero-section {
     background-color: var(--navy-color);
     width: 1440px;
-    padding: 188px 472px;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -165,6 +169,7 @@ a {
     line-height: 1.07;
     letter-spacing: 1.12px;
     text-align: center;
+    max-width: 496px;
 }
 
 .hero-button {
@@ -183,6 +188,8 @@ a {
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    height: 56px;
 }
 
 .hero-button:hover,
@@ -193,6 +200,7 @@ a {
 .benefits-section-list {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .benefits-section-item {
@@ -206,6 +214,7 @@ a {
 .doing-section-list {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .doing-section-item {
@@ -222,6 +231,7 @@ a {
 .team-section-list {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .team-section-item {
@@ -233,8 +243,11 @@ a {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-section-info {
+    padding: 32px 0;
+}
+
 .team-section-employee {
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -246,6 +259,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-color);
+    text-align: center;
 }
 
 .benefits-section-text,
@@ -255,15 +269,15 @@ a {
     line-height: 1.5;
     color: var(--slate-color);
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .benefits-section {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding: 120px 0;
 }
 
 .doing-section {
-    padding-top: 60px;
+    padding-top: 0;
     padding-bottom: 120px;
 }
 
@@ -296,10 +310,14 @@ a {
     padding-bottom: 100px;
 }
 
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer-text {
     color: var(--cloud-color);
     letter-spacing: 0.32px;
-    margin-top: 17.5px;
     width: 264px;
 }
 
@@ -307,7 +325,7 @@ a {
 
 
 .portfolio-section {
-    padding: 96px 120px;
+    padding: 96px 0 120px 0;
 }
 
 .portfolio-section-list {
@@ -327,7 +345,7 @@ a {
     letter-spacing: 0.04em;
     cursor: pointer;
     border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
+    border: 1px solid var(--cornflower-color);
     padding: 12px 24px;
 }
 
@@ -342,14 +360,13 @@ a {
 .portfolio-section-card-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 24px;
     row-gap: 48px;
 }
 
 .portfolio-section-card-item {
     flex-basis: calc((100% - 2*24px) / 3);
     padding-bottom: 32px;
-    border: 1px solid var(--cornflower, #E7E9FC);
 }
 
 .portfolio-section-card-img {
@@ -357,17 +374,21 @@ a {
     object-fit: cover;
 }
 
+.portfolio-section-card-info {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower-color);
+    border-top: none;
+}
+
 .portfolio-section-card-title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    margin: 32px 0 8px;
-    padding-left: 16px;
+    margin-bottom: 8px;
 }
 
 .portfolio-section-card-text {
     color: var(--slate-color);
     letter-spacing: 0.32px;
-    padding-left: 16px;
 }
